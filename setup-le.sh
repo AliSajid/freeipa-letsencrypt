@@ -29,3 +29,5 @@ done
 ipa-certupdate
 
 "$WORKDIR/renew-le.sh" --first-time
+
+touch "$WORKDIR/setup.done"
