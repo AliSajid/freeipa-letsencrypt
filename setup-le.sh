@@ -7,7 +7,7 @@ CERTS=("isrgrootx1.pem" "isrg-root-x2.pem" "lets-encrypt-r3.pem" "lets-encrypt-e
 
 sed -i "s/server.example.test/$FQDN/g" $WORKDIR/ipa-httpd.cnf
 
-yum install letsencrypt -y
+dnf install letsencrypt -y
 
 if [ ! -d "/etc/ssl/$FQDN" ]
 then
